@@ -2349,11 +2349,11 @@ ifdef SOFTDEVICE # Shouldn't do this when we want to be able to perform DFU OTA!
 	@echo Not merging softdevice or bootloader with application
 	# nrfutil  pkg generate --help
 	nrfutil pkg generate $(PROJ_NAME).zip --application $(PROJ_NAME).hex --debug-mode --key-file targets/nrf5x_dfu/ruuvi_open_private.pem
-	else
+    else
 	@echo Not merging softdevice or bootloader with application
 	# nrfutil  pkg generate --help
 	nrfutil pkg generate $(PROJ_NAME).zip --application $(PROJ_NAME).hex --application-version 0xff --hw-version 52 --sd-req 0x8C --key-file targets/nrf5x_dfu/dfu_private_key.pem
-	endif
+    endif
   else
   ifdef BOOTLOADER
 	@echo Not merging anything with bootloader
