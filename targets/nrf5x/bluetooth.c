@@ -745,7 +745,7 @@ static void gap_params_init() {
     char deviceName[BLE_GAP_DEVNAME_MAX_LEN];
 #ifdef PUCKJS
     strcpy(deviceName,"Puck.js");
-#else defined(RUUVITAG)
+#elif defined(RUUVITAG)
     strcpy(deviceName,"Puck.js");
 #else
     strcpy(deviceName,"Espruino "PC_BOARD_ID);
