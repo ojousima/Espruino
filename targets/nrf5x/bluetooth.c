@@ -746,7 +746,7 @@ static void gap_params_init() {
 #ifdef PUCKJS
     strcpy(deviceName,"Puck.js");
 #elif defined(RUUVITAG)
-    strcpy(deviceName,"Puck.js");
+    strcpy(deviceName,"RuuviTag");
 #else
     strcpy(deviceName,"Espruino "PC_BOARD_ID);
 #endif
